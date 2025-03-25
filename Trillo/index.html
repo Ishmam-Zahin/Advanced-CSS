@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600">
+
+    <link rel="stylesheet" href="css/style.css">
+    <title>Trillo App</title>
+</head>
+<body>
+    <div class="container">
+        <heading class="heading">
+            <img src="img/logo.png" alt="logo" class="heading__logo">
+            <form action="#" class="form">
+                <input type="text" class="form__input" placeholder="search hotels">
+                <button class="form__submit">
+                    <svg class="search-icon">
+                        <use xlink:href="css/sprite.svg#icon-magnifying-glass"/>
+                    </svg>
+                </button>
+            </form>
+            <div class="user-nav">
+                <div class="icon-box">
+                    <svg class="user-nav__icons">
+                        <use xlink:href="css/sprite.svg#icon-bookmark"/>
+                    </svg>
+                    <span>10</span>
+                </div>
+                <div class="icon-box">
+                    <svg class="user-nav__icons">
+                        <use xlink:href="css/sprite.svg#icon-chat"/>
+                    </svg>
+                    <span>15</span>
+                </div>
+                <figure class="icon-box">
+                    <img src="img/user-main.jpg" alt="user" class="user-nav__user-img">
+                    <figcaption class="user-nav__img-caption">zahin</figcaption>
+                </figure>
+            </div>
+        </heading>
+        <div class="main-container">
+            <nav class="nav-bar">
+                <ul class="nav-list">
+                    <li class="list-item list-item--active">
+                        <svg class="list-item__icon">
+                            <use xlink:href="css/sprite.svg#icon-home"/>
+                        </svg>
+                        <span class="list-item__text">Home</span>
+                    </li>
+                    <li class="list-item">
+                        <svg class="list-item__icon">
+                            <use xlink:href="css/sprite.svg#icon-aircraft-take-off"/>
+                        </svg>
+                        <span class="list-item__text">Flight</span>
+                    </li>
+                    <li class="list-item">
+                        <svg class="list-item__icon">
+                            <use xlink:href="css/sprite.svg#icon-key"/>
+                        </svg>
+                        <span class="list-item__text">Car Rental</span>
+                    </li>
+                    <li class="list-item">
+                        <svg class="list-item__icon">
+                            <use xlink:href="css/sprite.svg#icon-map"/>
+                        </svg>
+                        <span class="list-item__text">Tours</span>
+                    </li>
+                </ul>
+                <div class="footer">
+                    &#169; 2017 by trillo. All rights reserved.
+                </div>
+            </nav>
+            <main class="main-content">
+                <div class="photo-gallery">
+                    <figure>
+                        <img src="img/hotel-1.jpg" alt="hotel 1" class="photo-gallery__photo">
+                    </figure>
+                    <figure>
+                        <img src="img/hotel-2.jpg" alt="hotel 2" class="photo-gallery__photo">
+                    </figure>
+                    <figure>
+                        <img src="img/hotel-3.jpg" alt="hotel 3" class="photo-gallery__photo">
+                    </figure>
+                </div>
+                <div class="content-heading">
+                    <h1 class="content-heading__h1">
+                        Hotel Las Palmas
+                    </h1>
+                    <div class="star-container">
+                        <svg class="star-container__star">
+                            <use xlink:href="css/sprite.svg#icon-star"/>
+                        </svg>
+                        <svg class="star-container__star">
+                            <use xlink:href="css/sprite.svg#icon-star"/>
+                        </svg>
+                        <svg class="star-container__star">
+                            <use xlink:href="css/sprite.svg#icon-star"/>
+                        </svg>
+                        <svg class="star-container__star">
+                            <use xlink:href="css/sprite.svg#icon-star"/>
+                        </svg>
+                        <svg class="star-container__star">
+                            <use xlink:href="css/sprite.svg#icon-star"/>
+                        </svg>
+                    </div>
+                    <div class="location">
+                        <svg class="location__icon">
+                            <use xlink:href="css/sprite.svg#icon-location-pin"/>
+                        </svg>
+                        <a href="#" class="location__link">Albufeira, Portugal</a>
+                    </div>
+                    <div class="rating">
+                        <span class="rating__number">8.9</span>
+                        <span class="rating__text">224 votes</span>
+                    </div>
+                </div>
+                <div class="post-container">
+                    <div class="main-post">
+                        <p class="main-post__para">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi nisi dignissimos debitis ratione sapiente saepe. Accusantium cumque, quas, ut corporis incidunt deserunt quae architecto voluptate.
+                        </p>
+                        <p class="main-post__para">
+                            Accusantium cumque, quas, ut corporis incidunt deserunt quae architecto voluptate delectus, inventore iure aliquid aliquam.
+                        </p>
+                        <ul class="list">
+                            <li class="list-item">
+                                <span class="list-item__text">Close to the beach</span>
+                            </li>
+                            <li class="list-item">
+                                <span class="list-item__text">Free airport shuttle</span>
+                            </li>
+                            <li class="list-item">
+                                <span class="list-item__text">Air conditioning and heating</span>
+                            </li>
+                            <li class="list-item">
+                                <span class="list-item__text">We speak all languages</span>
+                            </li>
+                            <li class="list-item">
+                                <span class="list-item__text">Breakfast included</span>
+                            </li>
+                            <li class="list-item">
+                                <span class="list-item__text">Free wifi in all rooms</span>
+                            </li>
+                            <li class="list-item">
+                                <span class="list-item__text">Pets allowed</span>
+                            </li>
+                            <li class="list-item">
+                                <span class="list-item__text">Perfect for families</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="reviews"></div>
+                </div>
+            </main>
+        </div>
+    </div>
+</body>
+</html>
