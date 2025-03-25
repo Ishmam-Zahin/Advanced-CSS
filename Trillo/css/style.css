@@ -233,20 +233,6 @@ body {
   fill: red;
   margin-right: 0.5rem;
 }
-.main-container .main-content .content-heading .location__link {
-  color: var(--color-primary);
-  text-decoration: none;
-  font-size: 1.3rem;
-  font-weight: 300;
-  border-bottom: 1px solid currentColor;
-  transition: all 0.2s;
-}
-.main-container .main-content .content-heading .location__link:hover {
-  color: #000;
-}
-.main-container .main-content .content-heading .location__link:focus {
-  animation: pulse-anim 1s infinite;
-}
 .main-container .main-content .content-heading .rating {
   background-color: var(--color-primary);
   align-self: stretch;
@@ -272,7 +258,7 @@ body {
 }
 .main-container .main-content .post-container .main-post {
   background-color: #fff;
-  flex: 0 1 55%;
+  flex: 0 1 65%;
   padding: 2rem;
   box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
 }
@@ -333,8 +319,91 @@ body {
   box-sizing: content-box;
 }
 .main-container .main-content .post-container .reviews {
-  background-color: blue;
   flex: 1 1;
+  margin-left: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.main-container .main-content .post-container .reviews .review-container {
+  background-color: #fff;
+  margin-bottom: 3rem;
+  padding: 3rem;
+  font-size: 1.6rem;
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
+}
+.main-container .main-content .post-container .reviews .review-container .detail-container {
+  margin-top: 5rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.main-container .main-content .post-container .reviews .review-container .detail-container .user-img {
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+  margin-right: 1.5rem;
+}
+.main-container .main-content .post-container .reviews .review-container .detail-container .name-date {
+  font-size: 1.3rem;
+  margin-right: auto;
+}
+.main-container .main-content .post-container .reviews .review-container .detail-container .name-date .name {
+  display: block;
+  text-transform: uppercase;
+}
+.main-container .main-content .post-container .reviews .review-container .detail-container .name-date .date {
+  display: block;
+}
+.main-container .main-content .post-container .reviews .review-container .detail-container .score {
+  font-size: 2.5rem;
+  color: var(--color-primary);
+}
+.main-container .main-content .booking {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--color-grey-light-2);
+}
+.main-container .main-content .booking__text {
+  font-size: 2.8rem;
+  margin-bottom: 2rem;
+}
+.main-container .main-content .booking__btn {
+  background-color: transparent;
+  background-image: linear-gradient(to right, var(--color-primary-light), var(--color-primary-dark));
+  border: none;
+  padding: 2rem 4rem;
+  border-radius: 100rem;
+  color: #fff;
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  margin-bottom: 5rem;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+.main-container .main-content .booking__btn .first {
+  display: block;
+  transition: all 0.2s;
+}
+.main-container .main-content .booking__btn .second {
+  position: absolute;
+  top: -30%;
+  left: 0;
+  transform: translateY(-50%);
+  transition: all 0.2s;
+}
+.main-container .main-content .booking__btn:hover {
+  background-image: linear-gradient(to left, var(--color-primary-light), var(--color-primary-dark));
+}
+.main-container .main-content .booking__btn:hover .second {
+  top: 50%;
+}
+.main-container .main-content .booking__btn:hover .first {
+  transform: translateY(200%);
 }
 
 @keyframes pulse-anim {
@@ -350,6 +419,20 @@ body {
     transform: scale(1);
     box-shadow: none;
   }
+}
+.btn-link {
+  color: var(--color-primary);
+  text-decoration: none;
+  font-size: 1.3rem;
+  font-weight: 300;
+  border-bottom: 1px solid currentColor;
+  transition: all 0.2s;
+}
+.btn-link:hover {
+  color: #000;
+}
+.btn-link:focus {
+  animation: pulse-anim 1s infinite;
 }
 
 /*# sourceMappingURL=style.css.map */
